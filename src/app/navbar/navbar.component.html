@@ -1,0 +1,52 @@
+<!--
+  <div class="nav-bar">
+  <ul>
+    <a href="#" [routerLink]="['/signin']" routerLinkActive="active">Sign In</a>
+    <a href="#">Contact Us</a>
+    <a href="#" [routerLink]="['/test']" routerLinkActive="active">Customer Support</a>
+  </ul>
+</div>
+-->
+
+<body>
+<mat-toolbar color="secondary" class="nav-bar">
+  <a [routerLink]="['/home']">
+    <img style="height: 75px;width: 75px; padding-left: 170px;" src="./assets/img/Neon.jpg">
+  </a>
+  <div class="container">
+    <span>Sign In</span>
+    <span>Contact Us</span>
+    <span>Customer Support</span>
+    <span>Settings</span>
+  </div>
+</mat-toolbar>
+
+<mat-card class="background">
+<div class="wrapper">
+    <h1>Neon</h1>
+    <form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+      <span  style="color: red;" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+        <span ng-show="myForm.email.$error.required">Email is required.</span>
+      </span>
+      <input type="text" placeholder="Email" ng-model="email" required>
+
+      <span style="color: red;" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+        <span ng-show="myForm.password.$error.required">password is required.</span>
+      </span>
+      <input type="password" placeholder="Password" ng-model="password" required>
+
+      <div class="bottom-text">
+        <input type="checkbox" name="remember" checked="checked">Remember me
+      </div>
+
+      <input type="submit" value="Login">
+    </form>
+
+    <br>
+    <div class="bottom-text">
+      <a href="#" type="nc" [routerLink]="['/signup']">Create a new account</a>
+      <a href="#" [routerLink]="['/security questions']">forgot password?</a>
+    </div>
+</div>
+</mat-card>
+</body>

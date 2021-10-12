@@ -1,0 +1,54 @@
+<body class="bg">
+  <mat-card class="background" type="card">
+  <div class="wrapper">
+      <h1>Sign In</h1>
+      <form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+        <span  style="color: red;" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+          <span ng-show="myForm.email.$error.required">Email is required.</span>
+        </span>
+        <input type="text" placeholder="Email" ng-model="email" required>
+  
+        <span style="color: red;" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+          <span ng-show="myForm.password.$error.required">password is required.</span>
+        </span>
+        <input type="password" placeholder="Password" ng-model="password" required>
+  
+        <div class="bottom-text">
+          <input type="checkbox" name="remember" checked="checked">Remember me
+        </div>
+  
+        <input type="submit" value="Login">
+      </form>
+  
+      <br>
+      <div class="bottom-text">
+        <a href="#" type="nc" [routerLink]="['/signup']">Create a new account</a>
+        <a href="#" [routerLink]="['/security questions']">forgot password?</a>
+      </div>
+  </div>
+  </mat-card>
+</body>
+  
+<!--
+  <mat-card>
+  
+    <mat-form-field role="form">
+        <div class="form-group mb-3">
+            <input class="form-control" placeholder="Email" type="email">
+        </div>
+        <div class="form-group mb-3">
+            <input class="form-control" placeholder="Password" type="password">
+        </div>
+        <div class="custom-control custom-control-alternative custom-checkbox">
+          <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+          <label class="custom-control-label" for=" customCheckLogin">
+            <span>Remember me</span>
+          </label>
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-primary">Sign in</button>
+        </div>
+    </mat-form-field>
+
+</mat-card>
+-->

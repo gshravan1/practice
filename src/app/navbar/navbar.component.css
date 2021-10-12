@@ -1,0 +1,111 @@
+.nav-bar {
+    justify-content: space-between;
+}
+
+.container {
+    padding-right: 150px;
+}
+
+span {
+    padding-right: 1.5rem;
+    font-weight: normal;
+    color: blueviolet;
+    font-family: Segoe UI;
+    cursor: pointer;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/img/BG1.jpg");
+    background-size: cover;
+    height: 657px;
+    font-family: play;
+}
+
+.wrapper {
+    width: 400px;
+    height: 350px;
+    color: blueviolet;
+    top: 18%;
+    left: 32%;
+    padding: 20px 30px;
+    position: absolute;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+h1 {
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    font-size: 25px;
+    color: blue;
+    text-align: center;
+    margin-bottom: 7%;
+    font-family: Segoe UI;
+}
+
+.wrapper input {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.wrapper input[type=text], .wrapper input[type=password] {
+    border: 1px solid blue;
+    height: 40px;
+    font-family: Segoe UI;
+    font-size: 15px;
+    opacity: 1;
+    color: black;
+}
+
+.wrapper input[type=submit] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: blueviolet;
+    color: white;
+    font-size: 20px;
+    font-family: Segoe UI;
+    font-weight: bold;
+}
+
+.wrapper input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.wrapper a {
+    font-size: 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+.bottom-text {
+    color: blue;
+    padding-top: 15px;
+}
+
+.bottom-text input {
+    width: 5%;
+    float: left;
+}
+
+.bottom-text a {
+    float: right;
+}
+
+.bottom-text a[type=nc] {
+    float: left;
+}
+
+.background {
+    background: seashell;
+    margin-top: 10px;
+    margin-left: 185px;
+    margin-right: 188px;
+    height: 540px;
+    border-radius: 8px;
+}

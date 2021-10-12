@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practice';
+  public parentMsg = "This is Parent Message";
 }

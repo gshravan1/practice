@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/img/BG1.jpg");
+    background-size: cover;
+    height: 657px;
+    font-family: play;
+}
+
+.wrapper {
+    width: 400px;
+    height: 440px;
+    color: blueviolet;
+    top: 18%;
+    left: 32%;
+    padding: 20px 30px;
+    position: absolute;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+h2 {
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    font-size: 25px;
+    color: blue;
+    text-align: center;
+    margin-bottom: 7%;
+    font-family: Segoe UI;
+}
+
+.wrapper input {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.wrapper input[type=text], .wrapper input[type=password] {
+    border: 1px solid blue;
+    height: 40px;
+    font-family: Segoe UI;
+    font-size: 15px;
+    opacity: 1;
+    color: black;
+}
+
+.wrapper input[type=submit] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: blueviolet;
+    color: white;
+    font-size: 20px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.wrapper input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.background {
+    background: seashell;
+    margin-top: 10px;
+    margin-left: 185px;
+    margin-right: 188px;
+    height: 600px;
+    border-radius: 8px;
+}

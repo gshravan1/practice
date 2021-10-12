@@ -1,0 +1,68 @@
+<body>
+
+    <div id="sect1"class="container">
+        <h1> GSK PRACTICE </h1>
+
+<div>
+    <h2>1. Interpolation:</h2>
+<p>a. {{name}} </p>
+<p>b. {{+ name.length}}</p>
+<p>c. {{name.toUpperCase()}}</p>
+</div>
+
+<div>
+    <h2>2. Property Binding:</h2>
+<input [id]="testId" type="text" value="Property Binding"> <br>
+<input [disabled]="true" id="{{testId}}" type="text" value="Property Binding">
+<input [disabled]="false" id="{{testId}}" type="text" value="Property Binding">
+</div>
+
+<div>
+    <h2>3. Class Binding:</h2>
+<p class="TextColor">This is class binding</p>
+<p class="TextSize">This is class binding</p>
+<p [class]="myTextColor">This is class binding</p>
+<p [class]="myTextSize">This is class binding</p>
+<p [class.TextStyle]="required">This is class binding</p>
+<p [ngClass]="Group">This is class binding</p>
+</div>
+
+<div>
+    <h2>4. Style Binding:</h2>
+<p [style.color]="'blue'">This is style binding</p>
+<p [style.color]="myColor">This is style binding</p>
+<p [style.color]="required ? 'brown': 'yellow' ">This is style binding</p>
+<p [ngStyle]="myStyles">This is Practice</p>
+</div>
+
+<div>
+    <h2>5. Event Binding:</h2>
+<button (click)="onClick()" type="button">Click Here</button>
+<p> {{greetings}} </p>
+</div>
+
+<div>
+    <h2>6. Two Way DataBinding:</h2>
+<input [(ngModel)]=data type="text">
+<button type="button">Click Here</button>
+{{data}}
+</div>
+
+<div>
+    <h2>7. ngif Directive:</h2>
+<p *ngIf="true" > this is {{direct}} </p>
+</div>
+
+<div>
+    <h2>8. ngfor Directive:</h2>
+    <div *ngFor="let x of objects; index as i; first as f">
+        <p> {{i}}. {{x}} </p>
+        <p style="color: chocolate;"> {{f}}. {{x}} </p>
+    </div>
+</div>
+
+<div>
+    <h2> {{fromParent}} </h2>
+</div>
+</div>
+</body>

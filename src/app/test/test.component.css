@@ -1,0 +1,41 @@
+#sect1 {  
+    height: 500 px;
+    background-image: url("../../assets/img/background.jpg");  
+    background-size: 100% ;  
+    background-size: cover;  
+} 
+
+h1 {
+    font-family: Broadway;
+    text-align: center;
+    font-size: 35px;
+    color: blue;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: Segoe UI;
+    font-size: 25px;
+    color: magenta;
+    background-color: black;
+    width: 300px;
+    cursor: pointer;
+}
+
+p {
+    font-family: Calibri;
+    font-size: 20px;
+    color: black;
+}
+
+.TextColor {
+    color: red;
+}
+
+.TextSize {
+    font-size: 25px;
+}
+
+.TextStyle {
+    font-style: italic;
+}
